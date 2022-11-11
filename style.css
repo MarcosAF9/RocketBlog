@@ -135,6 +135,10 @@ a {
     max-width: 500px; 
 }
 
+#line {
+    margin-bottom: 24px;
+}
+
 /* FOOTER */
 #footer {
     padding: 64px 236px;
@@ -152,4 +156,62 @@ a {
 
 .element img {
     margin-bottom: 8px;
+}
+
+/* MOBILE */
+@media (max-width: 450px) {
+    body {
+        
+    }
+
+    #header {
+        padding: 64px 20px;
+    }
+
+    #brand {
+        margin: 0 auto;
+    }
+
+    #navbar {
+        display: none;
+    }
+
+    #search-bar {
+        display: none;
+    }
+
+    #infos {
+        flex-direction: column;
+    }
+
+    #infos-text {
+        max-width: 400px;
+    }
+
+    #infos-btn {
+        margin-bottom: 20px;
+    }
+
+    
+
+    #content {
+        padding: 64px 20px;
+        flex-direction: column;
+    }
+
+    #main-content {
+        max-width: 420px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 50px;
+    }
+
+
+    #footer {
+        padding: 20px 0;
+        margin: 0 auto;
+        justify-content: center;
+        gap: 30px;
+    }
 }
