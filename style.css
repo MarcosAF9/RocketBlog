@@ -1,0 +1,155 @@
+:root {
+    --purple-bg: #290742;
+    --dark-bg: #170027;
+    --button-bg: #9e6dc2;
+    --white: #fff;
+    --green: #4fff4b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* CABEÇALHO */
+#header {
+    background-color: var(--purple-bg);
+    display: flex;
+    flex-direction: column;
+    padding: 64px 236px;
+    gap: 64px;
+    border-bottom: 6px solid var(--green);
+}
+
+#head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar {
+    display: flex;
+    gap: 32px;
+}
+
+#navbar a {
+    color: var(--white);
+}
+
+#navbar a:hover {
+    border-left: 2px solid var(--green);
+}
+
+#search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 44px;
+}
+
+#search-input {
+    height: 100%;
+    width: 100%;
+    padding-left: 26px;
+    border-radius: 6px 0 0 6px;
+    border: none;
+    background-color: var(--dark-bg);
+    color: var(--white);
+}
+
+#search-btn {
+    background-color: var(--button-bg);
+    color: var(--white);
+    width: 70px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 6px 6px 0;
+}
+
+/* INFOS */
+#infos {
+    display: flex;
+    justify-content: space-between;
+}
+
+#infos-text {
+    width: 570px;
+}
+
+#infos-title {
+    font-size: 36px;
+    color: var(--button-bg);
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+#infos-description {
+    font-size: 18px;
+    color: var(--white);
+    margin-bottom: 24px;
+}
+
+#infos-btn {
+    display: flex;
+    width: 140px;
+}
+
+#infos-btn-p {
+    display: inline;
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+/* CONTEÚDO */
+#content {
+    padding: 60px 236px;    
+    display: flex;
+    justify-content: space-between;
+}
+
+#main-content {
+    max-width: 570px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.content-element {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 48px;
+}
+
+#side-content {
+    max-width: 500px; 
+}
+
+/* FOOTER */
+#footer {
+    padding: 64px 236px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.element {
+    display: flex;
+    flex-direction: column;
+    max-width: 370px;
+    gap: 8px;
+}
+
+.element img {
+    margin-bottom: 8px;
+}
